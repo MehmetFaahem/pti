@@ -2,6 +2,8 @@ import Image from "next/image";
 import Parent from "./components/Parent";
 import { Quicksand } from "next/font/google";
 import ImageOne from "../public/Image1.png";
+import Popular from "./components/Popular";
+import Recommended from "./components/Recommended";
 
 const inter = Quicksand({
   subsets: ["latin"],
@@ -12,7 +14,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen">
       <Parent>
-        <section className="w-full flex place-items-center h-[300px] rounded-xl mt-[150px] bg-[#f99f1c]">
+        <section className="w-full overflow-hidden flex place-items-center h-[300px] rounded-xl mt-[150px] bg-[#f99f1c]">
           <div className="pl-[10%]">
             <h1
               className={`${inter.className} leading-[50px] font-[700] w-[90%] text-white text-[44px]`}
@@ -29,6 +31,8 @@ export default function Home() {
             <Image alt="" src={ImageOne} height={600} width={600} />
           </div>
         </section>
+        <Popular />
+        <Recommended />
       </Parent>
     </main>
   );
