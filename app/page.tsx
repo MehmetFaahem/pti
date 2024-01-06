@@ -12,7 +12,7 @@ const inter = Quicksand({
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen">
+    <main className="min-h-screen">
       <Parent>
         <section className="w-full overflow-hidden flex place-items-center h-[300px] rounded-xl mt-[150px] bg-[#f99f1c]">
           <div className="pl-[10%]">
