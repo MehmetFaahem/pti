@@ -140,20 +140,20 @@ function Recommended() {
       </div>
       <div className="flex justify-between place-items-center">
         <h1
-          className={`${inter.className} text-[#00122A] font-[500] text-[26px]`}
+          className={`${inter.className} text-[#00122A] font-[500] laptop:font-light mobile:font-[600] mobile:text-[16px] laptop:text-[26px]`}
         >
           Recommended
         </h1>
         <div className="flex place-items-center">
           <button
             onClick={() => setShow(true)}
-            className="text-[#FD6011] mr-[14px] text-[16px]"
+            className="text-[#FD6011] laptop:flex mobile:hidden mr-[14px] text-[16px]"
           >
             AddMore
           </button>
           <div className="w-[10px] relative flex place-items-center">
             <button
-              className="absolute right-0"
+              className="absolute laptop:flex mobile:hidden right-0"
               onClick={() => {
                 leftrend !== 0 ? setRightrend(rightrend - 1) : null;
                 leftrend !== 0 ? setLeftrend(leftrend - 1) : null;
@@ -185,7 +185,7 @@ function Recommended() {
         </div>
       </div>
       <div className="w-full h-[400px] mt-[20px]">
-        <div className="flex place-items-center overflow-hidden space-x-4">
+        <div className="flex place-items-center mobile:overflow-auto laptop:overflow-hidden space-x-4">
           {foods.map((item: any, index: any) => (
             <div key={index} className=" flex flex-col justify-items-center">
               <div className="relative w-[200px] h-[280px]">

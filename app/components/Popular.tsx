@@ -138,20 +138,20 @@ function Popular() {
       </div>
       <div className="flex justify-between place-items-center">
         <h1
-          className={`${inter.className} text-[#00122A] font-[500] text-[26px]`}
+          className={`${inter.className} text-[#00122A] font-[500] laptop:font-light mobile:font-[600] mobile:text-[16px] laptop:text-[26px]`}
         >
           Popular
         </h1>
         <div className="flex place-items-center">
           <button
             onClick={() => setShow(true)}
-            className="text-[#FD6011] mr-[14px] text-[16px]"
+            className="text-[#FD6011] laptop:flex mobile:hidden mr-[14px] text-[16px]"
           >
             AddMore
           </button>
-          <div className="w-[10px] relative flex place-items-center">
+          <div className="w-[10px] mobile:px-2 laptop:px-0 relative flex place-items-center">
             <button
-              className="absolute right-0"
+              className="absolute laptop:flex mobile:hidden right-0"
               onClick={() => {
                 leftrend !== 0 ? setRightrend(rightrend - 1) : null;
                 leftrend !== 0 ? setLeftrend(leftrend - 1) : null;
