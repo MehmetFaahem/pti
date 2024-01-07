@@ -2,6 +2,8 @@
 
 This is a responsive E-Commerce Site by Quad Theory Ltd. You can AddMore product in Popular for testing purpose here.
 
+Note: Vercel and Netlify do not allow to mix http and https. Here the provided API is in http protocol. That's why the products can not be loaded from API. You must allow the insecure content from the site setting. Here is the direction: https://github.com/vercel/vercel/discussions/5287#discussioncomment-3596055
+
 ## Getting Started
 
 First, run the development server:
