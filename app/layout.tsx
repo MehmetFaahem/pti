@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <meta
         http-equiv="Content-Security-Policy"
-        content="upgrade-insecure-requests"
+        content="upgrade-secure-requests"
       />
       <body className={inter.className}>
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
