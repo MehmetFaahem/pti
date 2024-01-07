@@ -17,10 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <meta
+      {/* <meta
         http-equiv="Content-Security-Policy"
         content="upgrade-secure-requests"
-      />
+      /> */}
       <body className={inter.className}>
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
           {children}
