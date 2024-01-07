@@ -139,7 +139,9 @@ function Recommended() {
         </div>
       </div>
       <div className="flex justify-between place-items-center">
-        <h1 className={`${inter.className} font-[500] text-[26px]`}>
+        <h1
+          className={`${inter.className} text-[#00122A] font-[500] text-[26px]`}
+        >
           Recommended
         </h1>
         <div className="flex place-items-center">

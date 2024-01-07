@@ -16,13 +16,12 @@
   }
 } */
 
-input{
-  outline: none;
+input:focus {
+  outline: 0 none;
+  border: 0 none;
 }
 
 body {
   color: black;
-  background: rgb(
-    238, 239, 240
-  )
+  background: rgb(238, 239, 240);
 }

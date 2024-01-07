@@ -47,7 +47,7 @@ function Popular() {
       });
   }, [rightrend, leftrend]);
   return (
-    <div className="mt-[120px]">
+    <div className="mobile:pt-[60px] laptop:pt-[120px]">
       <div
         className={`${
           show ? "flex" : "hidden"
@@ -137,7 +137,11 @@ function Popular() {
         </div>
       </div>
       <div className="flex justify-between place-items-center">
-        <h1 className={`${inter.className} font-[500] text-[26px]`}>Popular</h1>
+        <h1
+          className={`${inter.className} text-[#00122A] font-[500] text-[26px]`}
+        >
+          Popular
+        </h1>
         <div className="flex place-items-center">
           <button
             onClick={() => setShow(true)}
@@ -179,7 +183,7 @@ function Popular() {
         </div>
       </div>
       <div className="w-full h-[400px] mt-[20px]">
-        <div className="flex place-items-center overflow-hidden space-x-4">
+        <div className="flex place-items-center mobile:overflow-auto laptop:overflow-hidden space-x-4">
           {foods.map((item: any, index: any) => (
             <div key={index} className=" flex flex-col justify-items-center">
               <div className="relative w-[200px] h-[280px]">
